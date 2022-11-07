@@ -39,7 +39,7 @@ p {
 .weather-card {
   padding: 20px;
   border: 1px solid #dadde1;
-  box-shadow: 0 0 5px 8px rgba(184, 203, 209, 0.5);
+  box-shadow: 0.4em 0.4em 20px 10px rgba(135, 144, 150, 0.603);
   border-radius: 7px;
   background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/05/33/86562656f65b38e.png);
 }
@@ -107,22 +107,23 @@ p {
 }
 
 .weather-forecast-days {
-  font-size: 15px;
-  margin-top: 8px;
-  opacity: 0.8;
+  font-size: 16px;
+  margin-top: 10px;
+  opacity: 0.9;
 }
 
 .weather-forecast-temperature {
-  font-size: 13px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .weather-forecast-temperature-min {
   color: rgb(129, 129, 129);
+  font-size: 14px;
 }
 
 .weather-forecast-temperature-max {
   color: rgb(75, 75, 75);
+  font-size: 15px;
 }
 
 #city {
@@ -138,7 +139,7 @@ p {
 }
 
 #weather-forecast-days-image {
-  width: 56%;
+  width: 100%;
 }
 
 #forecast-block {
@@ -146,5 +147,6 @@ p {
   background: rgba(245, 230, 253, 0.644);
   border-radius: 7px;
   margin-right: 10.3px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
+  box-shadow: 0.4em 0.4em 10px 3px rgba(164, 151, 170, 0.603);
 }
