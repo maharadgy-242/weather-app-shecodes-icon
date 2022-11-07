@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-wrapper">
+        <div class="weather-card">
+          <div class="row">
+            <div class="col-5">
+              <div class="d-flex weather-temperature">
+                <img src="" alt="" id="icon" />
+                <div class="d-flex">
+                  <strong id="temperature"></strong>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C|</a
+                    ><a href="#" id="fahrenheit-link" class="fahrengeit-active"
+                      >°F</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-3 wether-details">
+              <p class="feels-like">
+                Feels like: <span id="feels-like"></span>°C
+              </p>
+              <p class="humidity">Humidity: <span id="humidity"></span>%</p>
+              <p class="wind">Wind: <span id="wind"></span> m/s</p>
+            </div>
+            <div class="col-4">
+              <h1 id="city"></h1>
+              <ul>
+                <li id="date"></li>
+                <li id="weather-description"></li>
+              </ul>
+            </div>
+          </div>
+          <form id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter the city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="row moon-icon2">
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/new-moon-emoji.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/waxing-crescent-moon.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/last-quarter-moon.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/waxing-gibbous-moon.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/full-moon-emoji.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/432/original/back-moon-48_%E2%80%94_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png?1667559307"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/crescent-moon-emoji.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/full-moon-emoji.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/waning-gibbous-moon.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/429/original/first-quarter-moon-48_%E2%80%94_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png?1667558740"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/waning-crescent-moon.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+            <div class="col-1">
+              <img
+                src="https://img.icons8.com/emoji/512/new-moon-emoji.png"
+                alt=""
+                class="moon2"
+              />
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/maharadgy-242/weather-app-project"
+            target="_blank"
+            >Open source code</a
+          >
+          made by Mary Step
+        </small>
+      </div>
+    </div>
+    <script src="./add.js"></script>
+  </body>
+</html>
